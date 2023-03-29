@@ -28,8 +28,17 @@ header {
     height: 64px; 
 
     background-color: #c7f2f1;
+
+    /* Could also add transition onto the height */
+    /* transition: background-color 1s, height 1s;  */
+    transition: background-color 1s;
 }
 
+header.scrolled {
+    background-color: #ffffff;
+    /* Could also increase the height */
+    /* height: 100px */
+}
 /* Allows to grow as big as the container */
 header h1, header nav {
     flex: 1; 
@@ -118,3 +127,4 @@ section.content:nth-child(even) {
 section.content:nth-child(even) div.content {
     margin: 0 48px 0 0;
 }
+
